@@ -1,8 +1,19 @@
 public class Book {
 
     private String name;  
-    private String author; 
-
+    private String author;
+    
+    //no argumnet constructor
+    public Book() {
+        name = "Unknown Title";
+        author = "Unknown Author";
+    }
+ 
+    //Paratemised constructor
+    public Book(String name, String author) {
+        this.name = name;
+        this.author = author;
+    }
     // Set name
     public void setName(String n) { 
         name = n;
